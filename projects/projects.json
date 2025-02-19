@@ -1,0 +1,102 @@
+[
+  {
+    "name": "LogiFlow",
+    "desc": "Engineered logistics analytics pipeline on GCP with Python, Dataflow, Cloud Scheduler, and BigQuery, increasing throughput by 40%. Also used Mage.ai and Cloud Scheduler",
+    "category": "Data Engineering",
+    "tech": ["GCP", "Python", "BigQuery", "Cloud Scheduler"],
+    "image": "assets/images/images/logi.jpg",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  },
+  {
+    "name": "Fraud Detection System",
+    "desc": "Built fraud detection pipelines with Delta Lake, Flink, and Kafka, cutting query latency by 25% via Presto. Deployed PyTorch-based LLM using GPT-2 for anomaly detection, improving accuracy.",
+    "category": "Data Engineering",
+    "tech": ["Databricks", "Flink", "Kafka", "Presto", "LLM"],
+    "image": "assets/images/images/Fraud-Detection.png",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  },
+  {
+    "name": "PodcastGPT",
+    "desc": "Developed PodcastGPT with FAISS, OpenAI GPT, and LangChain, boosting query retrieval by 15%. Built a scalable API with FastAPI, Docker, AWS Lambda, and Step Functions, enhancing search efficiency.",
+    "category": "Machine Learning",
+    "tech": ["FAISS", "OpenAI", "FastAPI", "AWS Lambda"],
+    "image": "assets/images/images/podcast.jpeg",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  },
+  {
+    "name": "ShopPulse",
+    "desc": "Built real-time analytics for e-commerce trends with Python and streaming pipelines, improving customer engagement metrics.",
+    "category": "Data Engineering",
+    "tech": ["Python", "Streaming Pipelines"],
+    "image": "assets/images/images/real.png",
+    "links": {
+      "code": "https://github.com/patil-pus/ShopPulse-Real-Time-E-Commerce-Insights"
+    }
+  },
+  {
+    "name": "Mindmate",
+    "desc": "Developed a JavaScript-based mental health support app integrating AI-driven recommendations for emotional well-being.",
+    "category": "Web Development",
+    "tech": ["JavaScript", "React"],
+    "image": "assets/images/images/mindmate.jpg",
+    "links": {
+      "code": "https://github.com/patil-pus/Mindmate"
+    }
+  },
+  {
+    "name": "SalesSight",
+    "desc": "Designed a predictive sales analytics platform leveraging Python for forecasting trends and customer behavior analysis.",
+    "category": "Data Engineering",
+    "tech": ["AWS", "Python"],
+    "image": "assets/images/images/sales.jpg",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  },
+  {
+    "name": "Transport Network",
+    "desc": "Analyzed transport networks and optimized traffic flows using Jupyter Notebook and geospatial data processing techniques.",
+    "category": "Data Science",
+    "tech": ["GeoPandas", "Jupyter Notebook"],
+    "image": "assets/images/images/logi.png",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  },
+  {
+    "name": "Tours Management",
+    "desc": "Discover and book amazing tours with ToursManagement: your go-to platform for unforgettable travel experiences and seamless bookings.",
+    "category": "Collaboration",
+    "tech": ["React", "JavaScript"],
+    "image": "assets/images/images/tour.jpg",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  },
+  {
+    "name": "Brain x Tumor",
+    "desc": "Streamlit app allowing you to upload an MRI image and predict if there's a brain tumor or not using a trained Keras model.",
+    "category": "Machine Learning",
+    "tech": ["TensorFlow", "Streamlit", "Keras"],
+    "image": "assets/images/images/Brain-Tumor-Overview.jpeg",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  },
+  {
+    "name": "Disease-Prediction-Online",
+    "desc": "This app will analyze your disease symptoms and predict using Machine Learning on the web.",
+    "category": "Cloud Platforms",
+    "tech": ["AWS", "Machine Learning"],
+    "image": "assets/images/images/health.jpg",
+    "links": {
+      "code": "https://github.com/patil-pus/"
+    }
+  }
+]

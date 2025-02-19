@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Pushkar Patil, portfolio, Pushkar, Data Engineer, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Pushkar's Portfolio. Data Engineer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/Pushkar.png" type="image/x-png">
+    <title>Portfolio |Pushkar Patil</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo">Pushkar</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <!-- <li><a href="#certifications">Certifications</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        
+                
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content"> 
+    <h2>Hi There,<br/> I'm Pushkar <span>Patil</span></h2>
+    <p>i am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/pushkarpatil1/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/patil-pus/" target="_blank"><i class="fab fa-github"></i></a></li>
+       </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="true" class="tilt" src="./assets/images/profile2.jpg" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+  <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+  
+  <div class="row">
+
+  <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/casual.jpg" alt="">
+  </div>
+  <div class="content">
+      <h3>I'm Pushkar Rajesh Patil</h3>
+      <span class="tag">Data Engineer</span>
+      
+      <p>With over 3 years of experience as a Data Engineer, 
+         I specialize in building scalable data pipelines, automating ETL processes, 
+         and optimizing data workflows for large datasets. Proficient in Python, 
+         PySpark, SQL, and cloud platforms like AWS, GCP, and Azure, I ensure data 
+         reliability and performance. My expertise includes data warehousing, real-time 
+         streaming, and data orchestration using tools like Apache Spark, Kafka, and 
+         Airflow. I focus on delivering high-performance data solutions that drive 
+         actionable insights and business growth.</p>
+
+      <div class="box-container">
+          <div class="box">
+            <p><span> email : </span> pushkar.patil1269@gmail.com</p>
+            <p><span> place : </span> Boston, MA (Open to Relocate)</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+        
+        <div class="resumebtn">
+            <a href="assets/Pushkar Patil.pdf" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+  <div class="container">
+      <div class="grid" id="skillsContainer"></div>
+  </div>
+</section>
+
+<script>
+  const skillsData = [
+      { "name": "Talend", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/talend/talend-original.svg" },
+      { "name": "FastAPI", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/fastapi/fastapi-original.svg" },
+      { "name": "Databricks", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/databricks/databricks-original.svg" },
+      { "name": "AWS Glue", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+      { "name": "AWS Lambda", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+      { "name": "AWS S3", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+      { "name": "AWS Kinesis", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+      { "name": "AWS Cognito", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+      { "name": "AWS DynamoDB", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+      { "name": "Apache Spark", "icon": "https://img.icons8.com/color/48/000000/apache-spark.png" },
+      { "name": "Apache Hadoop", "icon": "https://img.icons8.com/color/48/000000/hadoop-distributed-file-system.png" },
+      { "name": "Snowflake", "icon": "https://img.icons8.com/color/48/000000/snowflake.png" },
+      { "name": "Docker", "icon": "https://img.icons8.com/color/48/000000/docker.png" },
+      { "name": "Kubernetes", "icon": "https://img.icons8.com/color/48/000000/kubernetes.png" },
+      { "name": "PostgreSQL", "icon": "https://img.icons8.com/color/48/000000/postgreesql.png" },
+      { "name": "MySQL", "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png" },
+      { "name": "MongoDB", "icon": "https://img.icons8.com/color/48/000000/mongodb.png" },
+      { "name": "Python", "icon": "https://img.icons8.com/color/48/000000/python--v1.png" },
+      { "name": "NumPy", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/numpy/numpy-original.svg" },
+      { "name": "TensorFlow", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/tensorflow/tensorflow-original.svg" },
+      { "name": "Java", "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" },
+      { "name": "Scala", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/scala/scala-original.svg" },
+      { "name": "Looker Studio", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/google/google-original.svg" },
+      { "name": "Tableau", "icon": "https://img.icons8.com/color/48/000000/tableau-software.png" },
+      { "name": "Power BI", "icon": "https://img.icons8.com/color/48/000000/power-bi.png" }
+  ];
+
+  const skillsContainer = document.getElementById("skillsContainer");
+
+  skillsData.forEach(skill => {
+      const skillDiv = document.createElement("div");
+      skillDiv.classList.add("skill-card");
+
+      skillDiv.innerHTML = `
+          <div class="skill-content">
+              <img src="${skill.icon}" alt="${skill.name}" class="skill-icon" onerror="this.src='https://via.placeholder.com/60';">
+              <span>${skill.name}</span>
+          </div>
+      `;
+
+      skillsContainer.appendChild(skillDiv);
+  });
+</script>
+
+<style>
+  /* General Layout */
+  .skills .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      width: 90%;
+      max-width: 1000px;
+  }
+
+  /* Skill Card */
+  .skill-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      height: 120px;
+      text-align: center;
+  }
+
+  .skill-card:hover {
+      transform: scale(1.05);
+  }
+
+  .skill-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill-icon {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+  }
+
+  .skill-content span {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .grid {
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+  }
+</style>
+
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+  <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+  <div class="box-container">
+
+    <div class="box">
+      <!-- <div class="image">
+          <img draggable="false" src="./assets/images/educat/mast.jpg" alt="Master's Degree">
+      </div> -->
+      <div class="content">
+          <h3>Master of Science in Information Systems</h3>
+          <p>Northeastern University, Boston, MA</p>
+          <h4>Aug 2022 - Jun 2024</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <!-- <div class="image">
+          <img draggable="false" src="./assets/images/educat/postgrad.jpg" alt="Postgraduate Degree">
+      </div> -->
+      <div class="content">
+          <h3>Postgraduate Degree in Business Administration</h3>
+          <p>NMIMS CDOE, India</p>
+          <h4>Jan 2021 - Jun 2022</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <!-- <div class="image">
+          <img draggable="false" src="./assets/images/educat/undergrad.jpg" alt="Bachelor's Degree">
+      </div> -->
+      <div class="content">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>Vivekanand Education Society's College of Arts, Science, and Commerce, Mumbai, India</p>
+          <h4>Jun 2017 - Dec 2020</h4>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- education section ends -->
+
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">
+
+    <!-- <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+</div>
+
+<!-- <div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div> -->
+
+</section>
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+  <div class="timeline">
+
+      <!-- StudentLandings - Data Engineer -->
+      <div class="container right">
+          <div class="content">
+              <div class="tag">
+                  <h2>StudentLandings</h2>
+              </div>
+              <div class="desc">
+                  <h3>Data Engineer</h3>
+                  <p>Feb 2025 – Present</p>
+                  <p>Amplified international student housing platform’s search speed by 60%, integrating Elasticsearch to resolve NoSQL inefficiencies and optimizing Redshift cost estimation and caching.</p>
+                  <p>Elevated UI performance by 5% by engineering ETL pipelines with AWS Glue, Amazon S3 for staging, and Amazon Athena for querying, enabling rapid feature deployment.</p>
+                  <p>Enhanced customer engagement and seasonal planning accuracy by 20% via cross-team data strategy sessions.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Institute for Experiential AI - Data Analyst/Engineer -->
+      <div class="container left">
+          <div class="content">
+              <div class="tag">
+                  <h2>Institute for Experiential AI, Northeastern University</h2>
+              </div>
+              <div class="desc">
+                  <h3>Data Analyst / Data Engineer</h3>
+                  <p>Jan 2024 – Aug 2024</p>
+                  <p>Optimized analytics for 9M users by processing 1M records/min of sensor data using ArcGIS and BigQuery, enhancing emissions analysis and urban planning.</p>
+                  <p>Reduced data latency by 15% through scalable ETL pipelines utilizing Pub/Sub for real-time ingestion, GCP Cloud Storage for staging, and PySpark for transformations.</p>
+                  <p>Achieved 35% inefficiency reduction by structuring Looker and ArcGIS dashboards, cutting $2.5K/month in operational costs.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Asfaleia - Data Engineer -->
+      <div class="container right">
+          <div class="content">
+              <div class="tag">
+                  <h2>Asfaleia Information Systems</h2>
+              </div>
+              <div class="desc">
+                  <h3>Data Engineer I</h3>
+                  <p>Dec 2020 – Aug 2022</p>
+                  <p>Minimized operational costs by 20% through IT solutions for retail, enhancing customer engagement and inventory management.</p>
+                  <p>Tripled throughput and reduced latency by 25%, saving $10K annually by automating batch workflows using Airflow, PySpark, AWS Glue, and Snowflake.</p>
+                  <p>Improved order processing and forecast accuracy by 20% using Tableau, leading executive presentations and team meetings.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Spanish BOLO - SQL Developer -->
+      <div class="container left">
+          <div class="content">
+              <div class="tag">
+                  <h2>Spanish BOLO</h2>
+              </div>
+              <div class="desc">
+                  <h3>SQL Developer</h3>
+                  <p>Jan 2020 – Sept 2020</p>
+                  <p>Boosted revenue forecasting by 30% for a subscription-based Spanish learning platform by optimizing AWS workflows using Athena, Step Functions, S3, and DynamoDB.</p>
+                  <p>Increased subscriptions by 7% by refining SQL queries with composite and hash indexes, improving query execution time by 10%.</p>
+                  <p>Developed Power BI dashboards that improved inventory tracking and revenue projections by 20%.</p>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <div class="morebtn">
+      <a href="/experience" class="btn">
+          <span>View All</span>
+          <i class="fas fa-arrow-right"></i>
+      </a>
+  </div>
+
+</section>
+
+
+    <!-- <section class="certifications" id="certifications">
+
+  <h1 class="heading"><i class="fas fa-certificate"></i> My <span>Certifications</span></h1>
+
+  <p class="quote">Certifications demonstrate your commitment to professional growth and skill development.</p>
+
+  <div class="box-container">
+
+ 
+    <div class="box">
+      <div class="content">
+        <h3>Certified Chartered Financial Analyst</h3>
+        <p>Udemy</p>
+        <h4>Sep 2024</h4>
+        <p>This certification was awarded by Navkar Digital Institute through Udemy, for Chartered Financial Analyst (CFA).</p>
+        <a href="assets/pdf/CFA_Certificate.pdf" target="_blank">View Certificate</a>
+      </div>
+    </div>
+        <div class="box">
+      <div class="content">
+        <h3>International Patent GRANT Certificate South African</h3>
+        <p>Republic Of South Africa</p>
+        <h4>June 2023</h4>
+        <p>My Patent for International Patent GRANT Certificate South African was granted successfully.</p>
+        <a href="assets/pdf/South Africa.pdf" target="_blank">View Certificate</a>
+      </div>
+    </div>
+   <div class="box">
+  <div class="content">
+    <h3>Fellow of the American Academy of Project Management (FAAPM)</h3>
+    <p>American Academy of Project Management</p>
+    <h4>June 2021 - Present</h4>
+    <p>I was duly elected as a Member of the American Academy of Project Management with all rights, honors, and privileges as provided in the constitution and bylaws pertaining thereto: and is currently in good standing, and is also designated as a Fellow of the American Academy of Project Management (FAAPM).</p>
+    <a href="#" target="_blank">View Certification</a>
+  </div>
+</div>  
+
+    <div class="box">
+      <div class="content">
+        <h3>Certified Data Science Professional</h3>
+        <p>American Academy of Project Management, USA (FAAPM)</p>
+        <h4>June 2021 - Present</h4>
+        <p>This certification was awarded by the American Academy of Project Management, recognizing expertise in Data Science.</p>
+        <a href="asstes/pdf/datascience.pdf" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="content">
+        <h3>Machine Learning</h3>
+        <p>Stanford University, Coursera</p>
+        <h4>Nov 2021</h4>
+        <p>Completed the Machine Learning course offered by Stanford University on Coursera.</p>
+        <a href="assets/pdf/Coursera Certificates-1.pdf" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="content">
+        <h3>Cyber Security to Everyone</h3>
+        <p>University of Maryland, Coursera</p>
+        <h4>Nov 2021</h4>
+        <p>Completed the Cyber Security to Everyone course offered by the University of Maryland on Coursera.</p>
+        <a href="assets/pdf/Coursera Certificates-2.pdf" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+  
+  </div>
+</section> -->
+
+
+<!-- experience section ends -->
+<!-- Contact section starts -->
+<section class="contact" id="contact">
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+      <div class="calendly-container">
+        <p>Schedule an appointment with us:</p>
+        
+        <!-- Calendly Widget -->
+        <div class="calendly-inline-widget" 
+             data-url="https://calendly.com/patilpushkar/" 
+             style="min-width:320px; height:630px;">
+        </div>
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact section ends -->
+
+<style>
+  .calendly-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Pushkar's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+1 (857) 313 0289  </p>
+          <p> <i class="fas fa-envelope"></i>pushkar.patil1269@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Boston, MA</p>
+          <div class="share">
+
+            <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/pushkarpatil1/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+            <li><a class="github" aria-label="GitHub" href="https://github.com/patil-pus/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li>  <a href="mailto:pushkar.patil1269@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a></li>
+            
+          </div>
+      </div>
+  </div>
+
+ 
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+<script>
+  document.getElementById('contact-form').onsubmit = function (event) {
+    event.preventDefault(); // Prevents the form from submitting
+    alert('Form submitted successfully!');
+  };
+</script>
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>

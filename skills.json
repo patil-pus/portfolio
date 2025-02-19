@@ -1,0 +1,186 @@
+[
+    {
+        "name": "Talend",
+        "icon": " https://companieslogo.com/img/orig/TLND_BIG-bf3f1655.png?t=1720244494"
+    },
+    {
+        "name": "FastAPI",
+        "icon": " https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/FastAPI_logo.svg/2560px-FastAPI_logo.svg.png"
+    },
+    {
+        "name": "Databricks",
+        "icon": " https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png"
+    },
+    {
+        "name": "Unix",
+        "icon": " https://cdn.pixabay.com/photo/2017/01/31/15/33/linux-2025130_1280.png"
+    },
+    {
+        "name": "AWS Glue",
+        "icon": " https://res.cloudinary.com/hevo/images/c_scale,w_448,h_163,dpr_2.625/f_webp,q_auto:best/v1686007870/hevo-learn-1/glue-logo/glue-logo.png?_i=AA"
+    },
+    {
+        "name": "AWS Lambda",
+        "icon": " https://miro.medium.com/v2/resize:fit:360/1*qg4GEY91S1IHZ1nXfPCVSg.png"
+    },
+    {
+        "name": "AWS S3",
+        "icon": " https://miro.medium.com/v2/resize:fit:512/1*MQX7dj45UrB5NbiDPAdCUA.png"
+    },
+    {
+        "name": "AWS Kinesis",
+        "icon": " https://meroxa.com/static/e09041c218499690bea5665933feb704/aws-kinesis_full_logo.web.png"
+    },
+    {
+        "name": "AWS Cognito",
+        "icon": " https://elastic-path.transforms.svdcdn.com/production/logos/AWS20Cognito.png?w=1200&h=630&q=82&auto=format&fit=clip&dm=1690463924&s=f8f79fbfe6b561ddc88c1000638f444a"
+    },
+    {
+        "name": "AWS ElasticSearch",
+        "icon": "https://symbols.getvecta.com/stencil_5/10_aws-elastic-search.23cf6ed447.svg"
+    },
+    {
+        "name": "AWS DynamoDB",
+        "icon": " https://cms.cdata.com/media/i3nhanbw/20191018-dynamodb-performance-0.png"
+    },
+    {
+        "name": "AWS RDS",
+        "icon": " https://cdn.prod.website-files.com/601064f495f4b4967f921aa9/635884ad45bd4b4723f4bc39_202210-rds-logo.png"
+    },
+    {
+        "name": "AWS Athena",
+        "icon": " https://blog-images.webscraper.io/images/3lKxthygrf8GBAE4drq6UmoqVR90LuQ6Y11GP3r6.png"
+    },
+    {
+        "name": "Apache Airflow",
+        "icon": " https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png"
+    },
+    {
+        "name": "Apache Kafka",
+        "icon": " https://static-00.iconduck.com/assets.00/kafka-icon-2048x935-cvu4503l.png"
+    },
+    {
+        "name": "Apache Spark",
+        "icon": "https://img.icons8.com/color/48/000000/apache-spark.png"
+    },
+    {
+        "name": "Apache Hadoop",
+        "icon": "https://img.icons8.com/color/48/000000/hadoop-distributed-file-system.png"
+    },
+    {
+        "name": "Apache NiFi",
+        "icon": " https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Apache-nifi-logo.svg/1200px-Apache-nifi-logo.svg.png"
+    },
+    {
+        "name": "Apache Flink",
+        "icon": " https://flink.apache.org/img/logo/png/1000/flink1000_color_white.png"
+    },
+    {
+        "name": "GCP BigQuery",
+        "icon": "https://img.icons8.com/color/48/000000/google-cloud-platform.png"
+    },
+    {
+        "name": "GCP Pub/Sub",
+        "icon": "https://img.icons8.com/color/48/000000/google-cloud-platform.png"
+    },
+    {
+        "name": "Cloud Composer",
+        "icon": "https://img.icons8.com/color/48/000000/google-cloud-platform.png"
+    },
+    {
+        "name": "GCP Dataflow",
+        "icon": "https://img.icons8.com/color/48/000000/google-cloud-platform.png"
+    },
+    {
+        "name": "Alteryx",
+        "icon": " https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Alteryx_logo.svg/2560px-Alteryx_logo.svg.png"
+    },
+    {
+        "name": "Snowflake",
+        "icon": "https://img.icons8.com/color/48/000000/snowflake.png"
+    },
+    {
+        "name": "Oracle Cloud",
+        "icon": "https://img.icons8.com/color/48/000000/oracle-logo.png"
+    },
+    {
+        "name": "Docker",
+        "icon": "https://img.icons8.com/color/48/000000/docker.png"
+    },
+    {
+        "name": "Kubernetes",
+        "icon": "https://img.icons8.com/color/48/000000/kubernetes.png"
+    },
+    {
+        "name": "Terraform",
+        "icon": "https://img.icons8.com/color/48/000000/terraform.png"
+    },
+    {
+        "name": "Git",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "Oracle DB",
+        "icon": "https://img.icons8.com/color/48/000000/oracle-logo.png"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    },
+    {
+        "name": "Tableau",
+        "icon": "https://img.icons8.com/color/48/000000/tableau-software.png"
+    },
+    {
+        "name": "Power BI",
+        "icon": "https://img.icons8.com/color/48/000000/power-bi.png"
+    },
+    {
+        "name": "GitHub Actions",
+        "icon": "https://img.icons8.com/material-outlined/48/000000/github.png"
+    },
+    {
+        "name": "MLflow",
+        "icon": "https://mlflow.org/docs/latest/_static/MLflow-logo-final-black.png"
+    },
+    {
+        "name": "dbt",
+        "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Data_build_tool_%28dbt%29_logo.svg/1200px-Data_build_tool_%28dbt%29_logo.svg.png"
+    },
+    {
+        "name": "Amazon Redshift",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "Google Cloud Storage (GCS)",
+        "icon": "https://img.icons8.com/color/48/000000/google-cloud-platform.png"
+    },
+    {
+        "name": "Collibra",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/5/58/Collibra-Logo-RGB-FullColor.png"
+    },
+    {
+        "name": "Casandra",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/2560px-Cassandra_logo.svg.png"
+    }
+]
