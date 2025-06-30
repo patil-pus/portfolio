@@ -156,11 +156,11 @@
       skillDiv.classList.add("skill-card");
 
       skillDiv.innerHTML = `
-          <div class="skill-content">
-              <img src="${skill.icon}" alt="${skill.name}" class="skill-icon" onerror="this.src='https://via.placeholder.com/60';">
-              <span>${skill.name}</span>
-          </div>
-      `;
+        <div class="skill-content">
+        <img src="${skill.icon}" alt="${skill.name}" class="skill-icon" onerror="this.src='https://placehold.co/60x60';">
+        <span>${skill.name}</span>
+        </div>
+    `;
 
       skillsContainer.appendChild(skillDiv);
   });
