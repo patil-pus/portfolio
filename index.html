@@ -4,544 +4,493 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Pushkar Patil, portfolio, Pushkar, Data Engineer, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Pushkar's Portfolio. Data Engineer" />
-    <!-- Custom CSS -->
+    <meta name="description" content="Pushkar Patil — AI/ML Engineer building prediction models, NLP systems, and intelligent data pipelines.">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/Pushkar.png" type="image/x-png">
-    <title>Portfolio |Pushkar Patil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+    <link id="favicon" rel="shortcut icon" href="./assets/images/Pushkar.png" type="image/x-png">
+    <title>Pushkar Patil | AI/ML Engineer</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
 
-<!-- navbar starts -->
-<header>
-        <a href="/" class="logo">Pushkar</a>
+<div class="loader" id="loader">
+    <div class="loader-content">
+        <div class="loader-ring"></div>
+        <span class="loader-text">PP</span>
+    </div>
+</div>
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
+<!-- NAVBAR -->
+<header id="header">
+    <a href="/" class="logo">Pushkar<span class="accent">.</span></a>
+    <div id="menu" class="menu-btn"><span></span><span></span><span></span></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
             <li><a href="#experience">Experience</a></li>
-            <!-- <li><a href="#certifications">Certifications</a></li> -->
+            <li><a href="#work">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-        
-                
-            </ul>
-        </nav>
+        </ul>
+    </nav>
 </header>
-<!-- navbar ends -->
 
-
-<!-- hero section starts -->
+<!-- HERO -->
 <section class="home" id="home">
-    <div id="particles-js"></div>
-
-    <div class="content"> 
-    <h2>Hi There,<br/> I'm Pushkar <span>Patil</span></h2>
-    <p>i am into <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/pushkarpatil1/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/patil-pus/" target="_blank"><i class="fab fa-github"></i></a></li>
-       </ul>
-      </div>
+    <canvas id="neural-canvas"></canvas>
+    <div id="three-hero"></div>
+    <div class="hero-bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
-<div class="image">
-    <img draggable="true" class="tilt" src="./assets/images/profile2.jpg" alt="">
-</div>
+    <div class="hero-content">
+        <div class="hero-badge"><span class="badge-dot"></span>Open to New Opportunities</div>
+        <h1 class="hero-title">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name gradient-text">Pushkar Patil</span>
+        </h1>
+        <div class="hero-role"><span class="role-static">I build </span><span class="typing-text"></span></div>
+        <p class="hero-desc">AI/ML Engineer with 3+ years crafting intelligent systems across healthcare and manufacturing. Specializing in NLP, RAG pipelines, predictive modeling, and production-ready MLOps.</p>
+        <div class="hero-cta">
+            <a href="#about" class="btn-primary">Explore My Work <i class="fas fa-arrow-right"></i></a>
+            <a href="assets/PushkarPatil.pdf" target="_blank" class="btn-secondary"><i class="fas fa-download"></i> Resume</a>
+        </div>
+        <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/pushkarpatil1/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/patil-pus/" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:pushkarpatil1029@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <div class="hero-image-container">
+        <div class="hero-image-wrapper">
+            <div class="image-ring ring-1"></div>
+            <div class="image-ring ring-2"></div>
+            <div class="image-ring ring-3"></div>
+            <img src="./assets/images/profile2.jpg" alt="Pushkar Patil" class="hero-img tilt">
+            <div class="floating-badge badge-ml"><i class="fas fa-brain"></i><span>AI / ML</span></div>
+            <div class="floating-badge badge-years"><span class="badge-num">3+</span><span>Years Exp</span></div>
+            <div class="floating-badge badge-projects"><i class="fas fa-code-branch"></i><span>Abbott Labs</span></div>
+        </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-line"></div><span>Scroll</span></div>
 </section>
-<!-- hero section ends -->
 
-
-<!-- about section starts -->
+<!-- ABOUT -->
 <section class="about" id="about">
-  <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-  
-  <div class="row">
-
-  <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/casual.jpg" alt="">
-  </div>
-  <div class="content">
-      <h3>I'm Pushkar Rajesh Patil</h3>
-      <span class="tag">Data Engineer</span>
-      
-      <p>With over 3 years of experience as a Data Engineer, 
-         I specialize in building scalable data pipelines, automating ETL processes, 
-         and optimizing data workflows for large datasets. Proficient in Python, 
-         PySpark, SQL, and cloud platforms like AWS, GCP, and Azure, I ensure data 
-         reliability and performance. My expertise includes data warehousing, real-time 
-         streaming, and data orchestration using tools like Apache Spark, Kafka, and 
-         Airflow. I focus on delivering high-performance data solutions that drive 
-         actionable insights and business growth.</p>
-
-      <div class="box-container">
-          <div class="box">
-            <p><span> email : </span> pushkar.patil1269@gmail.com</p>
-            <p><span> place : </span> Boston, MA (Open to Relocate)</p>
-          </div>
-      </div>
-  </div>
-</section>
-
-        
-        <div class="resumebtn">
-            <a href="assets/PushkarPatil.pdf" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
+    <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+    </div>
+    <div class="about-grid">
+        <div class="about-image-col reveal-left">
+            <div class="about-img-wrapper">
+                <img src="./assets/images/casual.jpg" alt="Pushkar Patil" class="about-img tilt">
+                <div class="about-img-glow"></div>
+            </div>
         </div>
-
-    </div>
+        <div class="about-content reveal-right">
+            <h3 class="about-name">Pushkar Rajesh Patil</h3>
+            <span class="about-tag">AI / ML Engineer</span>
+            <p class="about-desc">AI/ML Engineer with 3+ years of experience across healthcare, manufacturing, and research data environments. I build prediction models, NLP systems, and intelligent pipelines using AWS, GCP, and Azure — transforming raw data into clinical, operational, and business decisions that actually matter.</p>
+            <div class="about-stats">
+                <div class="stat-item"><span class="stat-num counter" data-target="3">0</span><span class="stat-num">+</span><span class="stat-label">Years Exp</span></div>
+                <div class="stat-item"><span class="stat-num counter" data-target="50">0</span><span class="stat-num">M+</span><span class="stat-label">Records</span></div>
+                <div class="stat-item"><span class="stat-num counter" data-target="42">0</span><span class="stat-num">%</span><span class="stat-label">Time Saved</span></div>
+                <div class="stat-item"><span class="stat-num counter" data-target="10">0</span><span class="stat-num">+</span><span class="stat-label">ML Models</span></div>
+            </div>
+            <div class="about-info">
+                <div class="info-item"><i class="fas fa-envelope"></i><span>pushkarpatil1029@gmail.com</span></div>
+                <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Fishers, IN &mdash; Open to Relocate</span></div>
+                <div class="info-item"><i class="fas fa-phone"></i><span>617-564-3397</span></div>
+            </div>
+            <a href="assets/PushkarPatil.pdf" target="_blank" class="btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
     </div>
 </section>
-<!-- about section ends -->
 
-<!-- skills section starts -->
+<!-- SKILLS -->
 <section class="skills" id="skills">
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Expertise</span></h2>
+    </div>
 
-  <div class="container">
-      <div class="grid" id="skillsContainer"></div>
-  </div>
+    <!-- Category Cards -->
+    <div class="skills-categories">
+        <div class="skill-category reveal">
+            <div class="category-header"><div class="category-icon"><i class="fas fa-brain"></i></div><h3>ML &amp; AI</h3></div>
+            <div class="skill-tags">
+                <span class="skill-tag">PyTorch</span><span class="skill-tag">TensorFlow</span><span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">XGBoost</span><span class="skill-tag">LightGBM</span><span class="skill-tag">MLflow</span>
+                <span class="skill-tag">Feature Engineering</span><span class="skill-tag">Anomaly Detection</span><span class="skill-tag">Time Series</span>
+            </div>
+        </div>
+        <div class="skill-category reveal">
+            <div class="category-header"><div class="category-icon"><i class="fas fa-language"></i></div><h3>NLP &amp; LLMs</h3></div>
+            <div class="skill-tags">
+                <span class="skill-tag">Transformers</span><span class="skill-tag">BERT</span><span class="skill-tag">Hugging Face</span>
+                <span class="skill-tag">RAG</span><span class="skill-tag">LangChain</span><span class="skill-tag">FAISS</span>
+                <span class="skill-tag">NER</span><span class="skill-tag">Embeddings</span><span class="skill-tag">Semantic Search</span>
+            </div>
+        </div>
+        <div class="skill-category reveal">
+            <div class="category-header"><div class="category-icon"><i class="fas fa-database"></i></div><h3>Data Engineering</h3></div>
+            <div class="skill-tags">
+                <span class="skill-tag">PySpark</span><span class="skill-tag">Apache Spark</span><span class="skill-tag">Airflow</span>
+                <span class="skill-tag">Apache Flink</span><span class="skill-tag">ETL Pipelines</span><span class="skill-tag">BigQuery</span>
+                <span class="skill-tag">Snowflake</span><span class="skill-tag">Data Streaming</span><span class="skill-tag">Kafka</span>
+            </div>
+        </div>
+        <div class="skill-category reveal">
+            <div class="category-header"><div class="category-icon"><i class="fas fa-cloud"></i></div><h3>Cloud &amp; MLOps</h3></div>
+            <div class="skill-tags">
+                <span class="skill-tag">AWS</span><span class="skill-tag">GCP</span><span class="skill-tag">Azure</span>
+                <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Model Monitoring</span><span class="skill-tag">Model Versioning</span><span class="skill-tag">Databricks</span>
+            </div>
+        </div>
+        <div class="skill-category reveal">
+            <div class="category-header"><div class="category-icon"><i class="fas fa-code"></i></div><h3>Languages &amp; DBs</h3></div>
+            <div class="skill-tags">
+                <span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MySQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">Redis</span>
+                <span class="skill-tag">Java</span><span class="skill-tag">Scala</span><span class="skill-tag">Spark SQL</span>
+            </div>
+        </div>
+        <div class="skill-category reveal">
+            <div class="category-header"><div class="category-icon"><i class="fas fa-chart-bar"></i></div><h3>Analytics &amp; Viz</h3></div>
+            <div class="skill-tags">
+                <span class="skill-tag">Power BI</span><span class="skill-tag">Tableau</span><span class="skill-tag">Looker</span>
+                <span class="skill-tag">A/B Testing</span><span class="skill-tag">Hypothesis Testing</span><span class="skill-tag">KPI Analysis</span>
+                <span class="skill-tag">Plotly</span><span class="skill-tag">Excel</span><span class="skill-tag">ArcGIS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Flip Icon Grid -->
+    <div class="skills-icon-title reveal">Tech Stack</div>
+    <div class="skills-icon-grid">
+        <!-- row 1 -->
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/python--v1.png" alt="Python"><span>Python</span></div><div class="skill-flip-back"><span>Primary Language</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/tensorflow.png" alt="TensorFlow"><span>TensorFlow</span></div><div class="skill-flip-back"><span>Deep Learning</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/pytorch.png" onerror="this.src='https://img.icons8.com/color/48/artificial-intelligence.png'" alt="PyTorch"><span>PyTorch</span></div><div class="skill-flip-back"><span>ML Framework</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/apache-spark.png" alt="Spark"><span>Apache Spark</span></div><div class="skill-flip-back"><span>Big Data Engine</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/docker.png" alt="Docker"><span>Docker</span></div><div class="skill-flip-back"><span>Containerization</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/kubernetes.png" alt="Kubernetes"><span>Kubernetes</span></div><div class="skill-flip-back"><span>Orchestration</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/postgreesql.png" alt="PostgreSQL"><span>PostgreSQL</span></div><div class="skill-flip-back"><span>Relational DB</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/mysql-logo.png" alt="MySQL"><span>MySQL</span></div><div class="skill-flip-back"><span>Relational DB</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB"><span>MongoDB</span></div><div class="skill-flip-back"><span>NoSQL</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/snowflake.png" alt="Snowflake"><span>Snowflake</span></div><div class="skill-flip-back"><span>Cloud DW</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS"><span>AWS</span></div><div class="skill-flip-back"><span>Cloud Platform</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/google-cloud.png" alt="GCP"><span>GCP</span></div><div class="skill-flip-back"><span>Cloud Platform</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/azure-1.png" alt="Azure"><span>Azure</span></div><div class="skill-flip-back"><span>Cloud Platform</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI"><span>Power BI</span></div><div class="skill-flip-back"><span>Visualization</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/tableau-software.png" alt="Tableau"><span>Tableau</span></div><div class="skill-flip-back"><span>Visualization</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="Java"><span>Java</span></div><div class="skill-flip-back"><span>Language</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/hadoop-distributed-file-system.png" alt="Hadoop"><span>Hadoop</span></div><div class="skill-flip-back"><span>Big Data</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS Glue"><span>AWS Glue</span></div><div class="skill-flip-back"><span>ETL Service</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="DynamoDB"><span>DynamoDB</span></div><div class="skill-flip-back"><span>NoSQL DB</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS Lambda"><span>Lambda</span></div><div class="skill-flip-back"><span>Serverless</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/fastapi.png" onerror="this.src='https://img.icons8.com/color/48/api.png'" alt="FastAPI"><span>FastAPI</span></div><div class="skill-flip-back"><span>API Framework</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="Hugging Face"><span>Hugging Face</span></div><div class="skill-flip-back"><span>NLP Models</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/mlops.png" onerror="this.src='https://img.icons8.com/color/48/decision.png'" alt="MLflow"><span>MLflow</span></div><div class="skill-flip-back"><span>MLOps</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/git.png" alt="Airflow"><span>Airflow</span></div><div class="skill-flip-back"><span>Orchestration</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel"><span>Excel</span></div><div class="skill-flip-back"><span>Analytics</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/numpy.png" onerror="this.src='https://img.icons8.com/color/48/math.png'" alt="NumPy"><span>NumPy</span></div><div class="skill-flip-back"><span>Numerical Computing</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/scala.png" onerror="this.src='https://img.icons8.com/color/48/code.png'" alt="Scala"><span>Scala</span></div><div class="skill-flip-back"><span>Language</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS S3"><span>AWS S3</span></div><div class="skill-flip-back"><span>Object Storage</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS Kinesis"><span>Kinesis</span></div><div class="skill-flip-back"><span>Data Streaming</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS Cognito"><span>Cognito</span></div><div class="skill-flip-back"><span>Auth Service</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/google-logo.png" alt="Looker Studio"><span>Looker Studio</span></div><div class="skill-flip-back"><span>BI Visualization</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/combo-chart--v1.png" alt="Talend"><span>Talend</span></div><div class="skill-flip-back"><span>ETL / Integration</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/data-configuration.png" alt="Databricks"><span>Databricks</span></div><div class="skill-flip-back"><span>Unified Analytics</span></div></div></div>
+        <div class="skill-flip-card reveal"><div class="skill-flip-inner"><div class="skill-flip-front"><img src="https://img.icons8.com/color/48/redis.png" onerror="this.src='https://img.icons8.com/color/48/database.png'" alt="Redis"><span>Redis</span></div><div class="skill-flip-back"><span>In-Memory DB</span></div></div></div>
+    </div>
 </section>
 
-<script>
-  const skillsData = [
-      { "name": "Talend", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/talend/talend-original.svg" },
-      { "name": "FastAPI", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/fastapi/fastapi-original.svg" },
-      { "name": "Databricks", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/databricks/databricks-original.svg" },
-      { "name": "AWS Glue", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
-      { "name": "AWS Lambda", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
-      { "name": "AWS S3", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
-      { "name": "AWS Kinesis", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
-      { "name": "AWS Cognito", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
-      { "name": "AWS DynamoDB", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
-      { "name": "Apache Spark", "icon": "https://img.icons8.com/color/48/000000/apache-spark.png" },
-      { "name": "Apache Hadoop", "icon": "https://img.icons8.com/color/48/000000/hadoop-distributed-file-system.png" },
-      { "name": "Snowflake", "icon": "https://img.icons8.com/color/48/000000/snowflake.png" },
-      { "name": "Docker", "icon": "https://img.icons8.com/color/48/000000/docker.png" },
-      { "name": "Kubernetes", "icon": "https://img.icons8.com/color/48/000000/kubernetes.png" },
-      { "name": "PostgreSQL", "icon": "https://img.icons8.com/color/48/000000/postgreesql.png" },
-      { "name": "MySQL", "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png" },
-      { "name": "MongoDB", "icon": "https://img.icons8.com/color/48/000000/mongodb.png" },
-      { "name": "Python", "icon": "https://img.icons8.com/color/48/000000/python--v1.png" },
-      { "name": "NumPy", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/numpy/numpy-original.svg" },
-      { "name": "TensorFlow", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/tensorflow/tensorflow-original.svg" },
-      { "name": "Java", "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" },
-      { "name": "Scala", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/scala/scala-original.svg" },
-      { "name": "Looker Studio", "icon": " https://github.com/devicons/devicon/tree/v2.16.0/icons/google/google-original.svg" },
-      { "name": "Tableau", "icon": "https://img.icons8.com/color/48/000000/tableau-software.png" },
-      { "name": "Power BI", "icon": "https://img.icons8.com/color/48/000000/power-bi.png" }
-  ];
-
-  const skillsContainer = document.getElementById("skillsContainer");
-
-  skillsData.forEach(skill => {
-      const skillDiv = document.createElement("div");
-      skillDiv.classList.add("skill-card");
-
-      skillDiv.innerHTML = `
-        <div class="skill-content">
-        <img src="${skill.icon}" alt="${skill.name}" class="skill-icon" onerror="this.src='https://placehold.co/60x60';">
-        <span>${skill.name}</span>
-        </div>
-    `;
-
-      skillsContainer.appendChild(skillDiv);
-  });
-</script>
-
-<style>
-  /* General Layout */
-  .skills .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  }
-
-  .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
-      padding: 20px;
-      width: 90%;
-      max-width: 1000px;
-  }
-
-  /* Skill Card */
-  .skill-card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-      height: 120px;
-      text-align: center;
-  }
-
-  .skill-card:hover {
-      transform: scale(1.05);
-  }
-
-  .skill-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .skill-icon {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-  }
-
-  .skill-content span {
-      margin-top: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      color: white;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-      .grid {
-          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      }
-  }
-</style>
-
-<!-- skills section ends -->
-
-
-<!-- education section starts -->
+<!-- EDUCATION -->
 <section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-  <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-  <div class="box-container">
-
-    <div class="box">
-      <!-- <div class="image">
-          <img draggable="false" src="./assets/images/educat/mast.jpg" alt="Master's Degree">
-      </div> -->
-      <div class="content">
-          <h3>Master of Science in Information Systems</h3>
-          <p>Northeastern University, Boston, MA</p>
-          <h4>Aug 2022 - Jun 2024</h4>
-      </div>
+    <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
     </div>
-
-    <div class="box">
-      <!-- <div class="image">
-          <img draggable="false" src="./assets/images/educat/postgrad.jpg" alt="Postgraduate Degree">
-      </div> -->
-      <div class="content">
-          <h3>Postgraduate Degree in Business Administration</h3>
-          <p>NMIMS CDOE, India</p>
-          <h4>Jan 2021 - Jun 2022</h4>
-      </div>
-    </div>
-
-    <div class="box">
-      <!-- <div class="image">
-          <img draggable="false" src="./assets/images/educat/undergrad.jpg" alt="Bachelor's Degree">
-      </div> -->
-      <div class="content">
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p>Vivekanand Education Society's College of Arts, Science, and Commerce, Mumbai, India</p>
-          <h4>Jun 2017 - Dec 2020</h4>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- education section ends -->
-
-
-
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-
-  <div class="box-container">
-
-    <!-- <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
+    <div class="edu-grid">
+        <div class="edu-card reveal-left">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-content">
+                <span class="edu-year">Aug 2022 – Dec 2024</span>
+                <h3>Master of Science in Information Systems</h3>
+                <p>Northeastern University, Boston, MA</p>
+            </div>
+            <div class="edu-glow"></div>
         </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
+        <div class="edu-card reveal">
+            <div class="edu-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="edu-content">
+                <span class="edu-year">Jan 2021 – Jun 2022</span>
+                <h3>Postgraduate in Business Administration</h3>
+                <p>NMIMS CDOE, Mumbai, India</p>
+            </div>
+            <div class="edu-glow"></div>
         </div>
-      </div>
-    </div> -->
-
-</div>
-
-<!-- <div class="viewall">
-  <a href="/projects" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div> -->
-
+        <div class="edu-card reveal-right">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="edu-content">
+                <span class="edu-year">Jun 2017 – Oct 2020</span>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>Mumbai University, Mumbai, India</p>
+            </div>
+            <div class="edu-glow"></div>
+        </div>
+    </div>
 </section>
-<!-- work project section ends -->
 
-<!-- Experience Section Starts -->
-
+<!-- EXPERIENCE -->
 <section class="experience" id="experience">
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-  <div class="timeline">
+    <div class="section-header reveal">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+    </div>
+    <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
 
-      <!-- ServiceNow - AI/ML Engineer -->
-<div class="container left">
-  <div class="content">
-    <div class="tag">
-      <h2>ServiceNow, MA</h2>
-    </div>
-    <div class="desc">
-      <h3>AI/ML Engineer</h3>
-      <p>Feb 2025 – Present</p>
-      <ul>
-        <li>Architected advanced NLP pipelines (NER, sentiment, QA) using transformer-based LLMs, boosting ticket classification accuracy by 28%</li>
-        <li>Built predictive analytics with XGBoost/LightGBM and time-series models to identify ITSM anomalies, cutting downtime by 22%</li>
-        <li>Integrated BERT, T5, and domain LLMs into intelligent search with relevance feedback, increasing retrieval precision by 30%</li>
-        <li>Operationalized containerized MLOps on Kubernetes with MLflow/Kubeflow for retraining and zero-downtime rollouts, reducing release cycles by 40%</li>
-        <li>Implemented Kafka + Spark streaming pipelines with Redis for real-time anomaly detection, improving MTTR</li>
-        <li>Spearheaded microservice AI automation using FastAPI and REST/gRPC for ITSM, HR, and Customer Service workflows</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Experiential AI - Data Analyst/Engineer -->
-<div class="container right">
-  <div class="content">
-    <div class="tag">
-      <h2>Institute for Experiential AI, Northeastern University</h2>
-    </div>
-    <div class="desc">
-      <h3>Data Analyst / Data Engineer</h3>
-      <p>Jan 2024 – Aug 2024</p>
-      <ul>
-        <li>Streamlined 10+ enterprise workflows via AI-powered orchestration (n8n, Make.com), reclaiming 15 engineer-hours/week</li>
-        <li>Engineered a hyperlocal environmental intelligence platform using GCP Pub/Sub, Flink, and BigQuery, sustaining 1M+ records/minute</li>
-        <li>Built high-performance BigQuery data marts with Spark SQL preprocessing for near-real-time analytics used by 10M+ end users</li>
-        <li>Delivered real-time and historical insights through Looker dashboards, reducing reporting latency and operational cost by $10K/month</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Asfaliea - Data Engineer I -->
-<div class="container left">
-  <div class="content">
-    <div class="tag">
-      <h2>Asfaliea Information Systems, Mumbai, India</h2>
-    </div>
-    <div class="desc">
-      <h3>Data Engineer I</h3>
-      <p>Dec 2020 – Aug 2022</p>
-      <ul>
-        <li>Ingested multi-source logs and telemetry into AWS S3 via Airflow DAGs, reducing manual ETL overhead by 25%</li>
-        <li>Developed event-driven ETL with AWS Glue, Lambda, Spark, and Snowflake Streams, boosting throughput by 15%</li>
-        <li>Directed cloud migration, optimizing IAM policies, S3 storage tiers, and orchestration workflows, enhancing reliability by 30%</li>
-        <li>Established PyTest and CI/CD validation frameworks, eliminating 100+ recurring data defects in production</li>
-        <li>Enhanced Snowflake performance with clustering, pruning, and caching, and added CloudWatch/SLA Airflow monitoring to prevent downtime</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-      <!-- Spanish BOLO - SQL Developer -->
-      <div class="container right">
-          <div class="content">
-              <div class="tag">
-                  <h2>Spanish BOLO, Hyderabad, India</h2>
-              </div>
-              <div class="desc">
-                  <h3>SQL Developer</h3>
-                  <p>Jan 2020 – Sept 2020</p>
-                  <ul>
-                      <li>Architected database infrastructure by redefining Schema, Partitions, UDLs and triggers to improve query performance by 10%</li>
-                      <li>Engineered SQL queries with window functions and indexing and deployed Pulumi for analysis, cutting costs by $2k per month</li>
-                      <li>Revitalized cloud operations with AWS Redshift, S3, and Athena for ETL-free analytics, enforced Cognito for secure access, implemented data governance, leveraging Tableau for sales projections, reducing overhead by 12%</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      
-      <div class="container left">
-        <div class="content">
-            <div class="tag">
-                <h2>Passionpreneurhub, Mumbai, India</h2>
-            </div>
-            <div class="desc">
-                <h3>Business Analyst</h3>
-                <p>Nov 2018 - May 2019</p>
-                <ul>
-                    <li> Orchestrated 38 automated workflows with AWS Glue, Lambda, and Redshift, and revamped MySQL pipelines using Python and Plotly for entrepreneurial data from multiple sources, boosting efficiency by 15%.</li>
-                    <li>Streamlined CI/CD workflows on Linux to automate deployments, reducing deployment time by 30% and enhancing data transformation through collaboration with cross-functional teams.</li>
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fas fa-flask"></i></div>
+            <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                    <div><h3>AI Engineer</h3><p class="company">Abbott Laboratories &bull; Fishers, IN</p></div>
+                    <span class="timeline-date">Feb 2025 – Present</span>
+                </div>
+                <ul class="timeline-points">
+                    <li>Engineered a GMP manufacturing risk prediction pipeline (Python, PySpark, PyTorch, Scikit-learn) analyzing <strong>50M+ batch records</strong>, improving early detection of production deviations by <strong>21%</strong></li>
+                    <li>Designed transformer-based NLP models (BERT / Hugging Face) extracting deviation, CAPA, and batch record entities from unstructured GMP documents, increasing data availability by <strong>38%</strong></li>
+                    <li>Implemented a RAG pipeline with embeddings &amp; vector search across <strong>10M+ GMP documents</strong>, reducing research and review time by <strong>42%</strong></li>
+                    <li>Optimized anomaly detection with XGBoost &amp; LightGBM on streaming equipment data, improving critical alert detection by <strong>27%</strong></li>
+                    <li>Supported A/B testing for healthcare digital tools via Power BI and Tableau dashboards using hypothesis testing and confidence intervals</li>
                 </ul>
+                <div class="timeline-tags"><span>PyTorch</span><span>BERT</span><span>RAG</span><span>XGBoost</span><span>PySpark</span><span>GMP/cGMP</span><span>Hugging Face</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fas fa-robot"></i></div>
+            <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                    <div><h3>Data Analyst / Data Engineer</h3><p class="company">Experiential AI, Northeastern University &bull; Boston, MA</p></div>
+                    <span class="timeline-date">Jan 2024 – Aug 2024</span>
+                </div>
+                <ul class="timeline-points">
+                    <li>Streamlined 10+ enterprise workflows with AI orchestration (n8n, Make.com) + geohash-based location search, reclaiming <strong>15 engineer-hours/week</strong></li>
+                    <li>Engineered hyperlocal environmental intelligence platform via GCP Pub/Sub, Flink, BigQuery sustaining <strong>1M+ records/minute</strong></li>
+                    <li>Built high-performance BigQuery data marts with geohash partitioning for near-real-time geo analytics for <strong>10M+ users</strong></li>
+                    <li>Delivered real-time insights via Looker and ArcGIS dashboards, reducing operational cost by <strong>$10K/month</strong></li>
+                </ul>
+                <div class="timeline-tags"><span>GCP</span><span>Apache Flink</span><span>BigQuery</span><span>Looker</span><span>n8n</span><span>Spark SQL</span></div>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fas fa-cogs"></i></div>
+            <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                    <div><h3>Data Engineer I</h3><p class="company">Asfaliea Information Systems &bull; Mumbai, India</p></div>
+                    <span class="timeline-date">Dec 2020 – Aug 2022</span>
+                </div>
+                <ul class="timeline-points">
+                    <li>Managed material master data for <strong>50K+ raw materials</strong> across two healthcare manufacturing sites in SAP</li>
+                    <li>Built AWS pipelines (S3, Glue, Spark, Lambda, EC2, ECS) consolidating SAP, inventory &amp; production data, reducing reporting latency by <strong>40%</strong></li>
+                    <li>Created a daily distressed-inventory tracker with DynamoDB, Lambda, SQL, Power BI — cutting issue resolution time by <strong>35%</strong></li>
+                    <li>Led <strong>90+ Agile PLM</strong> change orders strengthening documentation control and audit readiness</li>
+                    <li>Reduced manual reporting effort by <strong>65%</strong> through Power BI and Excel automation</li>
+                </ul>
+                <div class="timeline-tags"><span>AWS</span><span>SAP</span><span>PySpark</span><span>Power BI</span><span>DynamoDB</span><span>Agile PLM</span></div>
             </div>
         </div>
     </div>
-
-  
-
-
-
-
-
-<!--   <div class="morebtn">
-      <a href="/experience/index.html" class="btn">
-          <span>View All</span>
-          <i class="fas fa-arrow-right"></i>
-      </a>
-  </div> -->
-
 </section>
 
-
-<!-- Contact section starts -->
-<section class="contact" id="contact">
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-      <div class="calendly-container">
-        <p>Schedule an appointment with us:</p>
-        
-        <!-- Calendly Widget -->
-        <div class="calendly-inline-widget" 
-             data-url="https://calendly.com/patilpushkar/" 
-             style="min-width:320px; height:630px;">
-        </div>
-        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      </div>
+<!-- PROJECTS -->
+<section class="work" id="work">
+    <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
     </div>
-  </div>
+    <div class="projects-grid">
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/logi.png" alt="LogiFlow" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>GCP</span><span>Spark</span><span>FastAPI</span><span>Airflow</span></div>
+                <h3>LogiFlow</h3>
+                <p>Logistics analytics pipeline on GCP using Python, Dataflow &amp; BigQuery — increasing throughput by 40%. Integrated Mage.ai for data validation, improving analytics accuracy by 35%.</p>
+                <div class="project-metrics"><span><i class="fas fa-arrow-up"></i> 40% Throughput</span><span><i class="fas fa-check-circle"></i> 35% Accuracy</span></div>
+            </div>
+        </div>
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/podcast.jpeg" alt="PodcastGPT" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>FAISS</span><span>OpenAI</span><span>LangChain</span><span>FastAPI</span></div>
+                <h3>PodcastGPT</h3>
+                <p>RAG-based AI for intelligent podcast search integrating FAISS, OpenAI GPT &amp; LangChain with CI/CD — accelerating query retrieval speed by 15%. Scalable API via FastAPI, Docker &amp; AWS Lambda.</p>
+                <div class="project-metrics"><span><i class="fas fa-bolt"></i> 15% Faster</span><span><i class="fas fa-search"></i> Semantic Search</span></div>
+            </div>
+        </div>
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/Brain-Tumor-Overview.jpeg" alt="Brain Tumor Detection" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>PyTorch</span><span>CNN</span><span>Medical Imaging</span></div>
+                <h3>Brain Tumor Detection</h3>
+                <p>Deep learning CNN model for MRI-based brain tumor classification using PyTorch. Achieved high accuracy on multi-class detection with transfer learning and data augmentation techniques.</p>
+                <div class="project-metrics"><span><i class="fas fa-brain"></i> Deep Learning</span><span><i class="fas fa-microscope"></i> Medical AI</span></div>
+            </div>
+        </div>
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/Fraud-Detection.png" alt="Fraud Detection" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>XGBoost</span><span>SMOTE</span><span>Python</span><span>Sklearn</span></div>
+                <h3>Fraud Detection</h3>
+                <p>ML pipeline for financial fraud detection using XGBoost &amp; LightGBM on imbalanced transaction data. Applied SMOTE oversampling, threshold optimization, and SHAP explainability for interpretability.</p>
+                <div class="project-metrics"><span><i class="fas fa-shield-alt"></i> Anomaly Detection</span><span><i class="fas fa-chart-line"></i> XGBoost</span></div>
+            </div>
+        </div>
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/mindmate.jpg" alt="MindMate" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>NLP</span><span>BERT</span><span>Flask</span><span>Sentiment</span></div>
+                <h3>MindMate AI</h3>
+                <p>Mental health chatbot using fine-tuned BERT for emotion detection and sentiment analysis. NLP-driven conversation flow with crisis detection and personalized resource recommendation.</p>
+                <div class="project-metrics"><span><i class="fas fa-comments"></i> NLP Chatbot</span><span><i class="fas fa-heart"></i> Emotion AI</span></div>
+            </div>
+        </div>
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/real.png" alt="Real Estate Analytics" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>Python</span><span>Regression</span><span>Plotly</span><span>GeoData</span></div>
+                <h3>Real Estate Analytics</h3>
+                <p>Predictive pricing model for real estate using gradient boosting &amp; feature engineering on geo-spatial data. Interactive Plotly dashboards for neighborhood-level market insights and forecasting.</p>
+                <div class="project-metrics"><span><i class="fas fa-home"></i> Price Prediction</span><span><i class="fas fa-map"></i> Geo Analytics</span></div>
+            </div>
+        </div>
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/health.jpeg" alt="Health Analytics" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>Power BI</span><span>SQL</span><span>Python</span><span>Healthcare</span></div>
+                <h3>Health Analytics Dashboard</h3>
+                <p>End-to-end healthcare analytics platform consolidating patient &amp; operational data with SQL ETL pipelines into interactive Power BI dashboards for clinical decision support and KPI tracking.</p>
+                <div class="project-metrics"><span><i class="fas fa-heartbeat"></i> Clinical Insights</span><span><i class="fas fa-chart-pie"></i> Power BI</span></div>
+            </div>
+        </div>
+
+        <div class="project-card glass-card reveal tilt">
+            <div class="project-image">
+                <img src="./assets/images/images/sales.jpg" alt="Sales Forecasting" onerror="this.src='./assets/images/hero1.png'">
+                <div class="project-overlay"><a href="https://github.com/patil-pus/" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Code</a></div>
+            </div>
+            <div class="project-content">
+                <div class="project-tags"><span>LSTM</span><span>Prophet</span><span>Time Series</span><span>Python</span></div>
+                <h3>Sales Forecasting</h3>
+                <p>Multi-variate time series forecasting system combining LSTM neural networks and Facebook Prophet for retail sales prediction. Includes seasonality decomposition, anomaly flagging, and automated reporting.</p>
+                <div class="project-metrics"><span><i class="fas fa-chart-line"></i> Time Series</span><span><i class="fas fa-store"></i> Retail AI</span></div>
+            </div>
+        </div>
+
+    </div>
 </section>
-<!-- Contact section ends -->
 
-<style>
-  .calendly-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-  }
-</style>
-
-
-<!-- footer section starts -->
-<section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3>Pushkar's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+1 (857) 313 0289  </p>
-          <p> <i class="fas fa-envelope"></i>pushkar.patil1269@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Boston, MA</p>
-          <div class="share">
-
-            <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/pushkarpatil1/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-            <li><a class="github" aria-label="GitHub" href="https://github.com/patil-pus/" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li>  <a href="mailto:pushkar.patil1269@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a></li>
-            
-          </div>
-      </div>
-  </div>
-
- 
-
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="section-header reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-info reveal-left">
+            <h3>Let's Build Something Intelligent</h3>
+            <p>Whether you're looking for an AI/ML engineer, want to discuss a data challenge, or just want to connect — my inbox is always open.</p>
+            <div class="contact-links">
+                <a href="mailto:pushkarpatil1029@gmail.com" class="contact-link">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div><span class="link-label">Email</span><span class="link-value">pushkarpatil1029@gmail.com</span></div>
+                </a>
+                <a href="https://www.linkedin.com/in/pushkarpatil1/" target="_blank" class="contact-link">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div><span class="link-label">LinkedIn</span><span class="link-value">pushkarpatil1</span></div>
+                </a>
+                <a href="https://github.com/patil-pus/" target="_blank" class="contact-link">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <div><span class="link-label">GitHub</span><span class="link-value">patil-pus</span></div>
+                </a>
+                <div class="contact-link no-hover">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><span class="link-label">Location</span><span class="link-value">Fishers, IN &bull; Open to Relocate</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="calendly-wrapper reveal-right">
+            <p class="calendly-label"><i class="fas fa-calendar-alt"></i>&nbsp; Schedule a Meeting</p>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/patilpushkar/" style="min-width:320px; height:600px;"></div>
+            <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+    </div>
 </section>
-<!-- footer section ends -->
 
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">Pushkar<span class="accent">.</span></div>
+        <p class="footer-desc">AI/ML Engineer &mdash; building the future, one model at a time.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+            <a href="#experience">Experience</a><a href="#work">Projects</a><a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/pushkarpatil1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/patil-pus/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:pushkarpatil1029@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Pushkar Patil. Designed &amp; built with passion.</p>
+    </div>
+</footer>
 
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
+<a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
 
-<!-- <script>
-  document.getElementById('contact-form').onsubmit = function (event) {
-    event.preventDefault(); // Prevents the form from submitting
-    alert('Form submitted successfully!');
-  };
-</script> -->
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="./assets/js/script.js"></script>
-
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
